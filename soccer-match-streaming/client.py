@@ -17,7 +17,7 @@ def main():
     channel = grpc.insecure_channel('localhost:4000')
     stub = stream_pb2_grpc.SoccerStub(channel)
 
-    match = stream_pb2.Match(id="KKNuUdn4wI4")
+    match = stream_pb2.Match(id="cruzeiro")
     iterator = stub.Watch(match)
 
     try:
