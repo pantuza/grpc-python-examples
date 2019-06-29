@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+
+package stream;
+
+
+message Match {
+    string id = 1;
+}
+
+message Video {
+    bytes data = 1;
+    string data_type = 2;
+    string data_shape = 3;
+}
+
+
+service Soccer {
+
+    rpc Watch (Match) returns (stream Video) {}
+}
