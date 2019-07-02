@@ -1,3 +1,6 @@
+![Python Version](https://img.shields.io/badge/Python-%3E%3D%203.7-green.svg)
+![License](https://img.shields.io/badge/license-Apache%202-blue.svg)
+
 # gRPC Python Examples
 gRPC Python examples as reference code from a talk: Building Python services through gRPC.
 
