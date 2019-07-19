@@ -35,6 +35,23 @@ def main():
     # auto generated function add_CheeseServiceServicer_to_server
     cheese_pb2_grpc.add_CheeseServiceServicer_to_server(CheeseService(), server)
 
+    print("Cheese Farm service")
+    print(
+    """
+         _--"-.
+      .-"      "-.
+     |""--..      '-.
+     |      ""--..   '-.
+     |.-. .-".    ""--..".
+     |'./  -_'  .-.      |
+     |      .-. '.-'   .-'
+     '--..  '.'    .-  -.
+          ""--..   '_'   :
+                ""--..   |
+                      ""-'
+    """
+    )
+
     print('Listening on localhost:4000')
     server.add_insecure_port('localhost:4000')
     server.start()

@@ -40,6 +40,22 @@ def main():
     ssl_cert = open("ssl/cert.pem", "rb").read()
     credentials = grpc.ssl_server_credentials([(ssl_key, ssl_cert)])
 
+    print("Secure Cheese Farm service")
+    print(
+    """
+         _--"-.
+      .-"      "-.
+     |""--..      '-.
+     |      ""--..   '-.
+     |.-. .-".    ""--..".
+     |'./  -_'  .-.      |
+     |      .-. '.-'   .-'
+     '--..  '.'    .-  -.
+          ""--..   '_'   :
+                ""--..   |
+                      ""-'
+    """
+    )
     print('Listening on localhost:4000')
     server.add_secure_port('localhost:4000', credentials)
     server.start()
