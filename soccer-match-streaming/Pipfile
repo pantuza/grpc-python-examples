@@ -11,6 +11,7 @@ numpy = "*"
 opencv-python = "*"
 grpcio = "*"
 grpcio-tools = "*"
+Pygments = ">=2.7.4"
 
 [requires]
 python_version = "3.7"
