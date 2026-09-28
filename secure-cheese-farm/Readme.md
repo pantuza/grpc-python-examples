@@ -1,6 +1,6 @@
 # Secure (TLS) gRPC service
 
-This example is the Cheese service but encrypted using TLS protocol. 
+This example is the Cheese service but encrypted using TLS protocol.
 
 To check this service locally, please run as follows:
 
@@ -28,3 +28,16 @@ Open as many terminal you want and run an instance of the client code:
 ```bash
 $> pipenv run python client.py
 ```
+
+## Local TLS certificate
+
+The bundled demonstration certificate has expired. Before starting the server
+and client, generate a fresh localhost certificate and key:
+
+```sh
+cd ssl
+bash generate-keys.sh
+cd ..
+```
+
+Use this self-signed certificate only for the local example.
