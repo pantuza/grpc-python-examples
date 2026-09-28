@@ -1,5 +1,6 @@
-grpcio
-grpcio-tools
+grpcio>=1.84.0,<2
+grpcio-tools==1.84.0
 matplotlib
-numpy
-opencv-python
+numpy>=1.22
+opencv-python>=4.8.1.78
+protobuf>=7.36.2,<8
